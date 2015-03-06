@@ -44,7 +44,9 @@ end
 
 def write_to_CSV(array)
 	#loop that writes the array to the new .csv file 
-	CSV.open('c2.csv', 'w') do |csv_object| #open the new csv file and grant write access
+	#open the new csv file and grant write access
+	#hello should be name of new csv file
+	CSV.open('hello.csv', 'wb') do |csv_object| 
 		for e in array do 
 			csv_object << e #write row e to csv file
 		end
